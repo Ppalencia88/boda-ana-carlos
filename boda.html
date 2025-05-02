@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Ana & Carlos se casan!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #fdf5f0; /* Fondo crema */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://images.unsplash.com/photo-1519229550555-8e1c53ce0a7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+            color: white;
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px #000;
+        }
+        nav {
+            background: #ffffff;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #f8bb98; /* Rosa pastel */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .couple {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .couple img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .rsvp form {
+            background: #f8f1eb;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .rsvp input, .rsvp textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .rsvp button {
+            background: #f8bb98; /* Botón rosa pastel */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rsvp button:hover {
+            background: #cfa86c; /* Dorado sutil al hacer hover */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            color: #cfa86c; /* Dorado sutil */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <header>
+        <h1>Ana & Carlos</h1>
+        <p>15 de Septiembre, 2024</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#novios">Los Novios</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+
+    <!-- Los Novios -->
+    <section id="novios">
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; text-align: center; color: #cfa86c;">Los Novios</h2>
+        <div class="couple">
+            <div style="text-align:center;">
+                <img src="https://via.placeholder.com/200?text=Ana" alt="Ana">
+                <h3>Ana Martínez</h3>
+                <p>Amante de los detalles y el buen vino. Soñadora desde siempre.</p>
+            </div>
+            <div style="text-align:center;">
+                <img src="https://via.placeholder.com/200?text=Carlos" alt="Carlos">
+                <h3>Carlos López</h3>
+                <p>Ingeniero de día, chef amateur de noche. Su sonrisa lo dice todo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos">
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; text-align: center; color: #cfa86c;">Eventos</h2>
+        <ul style="list-style:none; padding-left:0;">
+            <li><strong>16:00 - Ceremonia</strong><br>Jardín de la Quinta "Los Olivos", Calle Flores 123, Madrid</li>
+            <li><strong>19:00 - Recepción</strong><br>Salón de banquetes "El Encanto"</li>
+            <li><strong>22:00 - Fiesta de Solteros</strong><br>Discoteca "La Luna"</li>
+        </ul>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp" id="rsvp">
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; text-align: center; color: #cfa86c;">Confirma tu Asistencia</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <select required>
+                <option value="">¿Asistirás?</option>
+                <option value="sí">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <textarea placeholder="Mensaje para los novios"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; text-align: center; color: #cfa86c;">Galería</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1519229550555-8e1c53ce0a7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boda 1">
+            <img src="https://images.unsplash.com/photo-1514404525428-9c6ad9338603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boda 2">
+            <img src="https://images.unsplash.com/photo-1500916434208-10b2d40cc08b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boda 3">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Ana & Carlos | Diseñado con amor 💖
+    </footer>
+
+</body>
+</html>
